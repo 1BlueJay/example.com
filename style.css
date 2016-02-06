@@ -8,7 +8,7 @@ html, body {
 body {
   background: #f3f9fa url("img2/bg.jpg") repeat;
   font: 14px/22px Arial;
-  color: #4444;
+  color: #444;
 }
 a {
   color: #0083df;
@@ -70,16 +70,79 @@ p {
 }
 
 /*Навигация*/
+
 #navigation {
-    height: 43px;
-    background: transparent url("img/bg-navigation.png") repeat-x;
-    claer: both;
+  height: 43px;
+  background: transparent url("img2/bg-navigation.png") repeat-x;
+  clear: both;
+}
+#navigation>ul {
+  height: 40px;
+  background: transparent url("img2/bg-navigation.png") repeat-x;
+  clear: both;
+  }
+#navigation>ul>li {
+  float: left;
+  border-right: 1px solid #444;
+  list-style-type: none;
+  position: relative;
+}
+#navigation>ul>li>a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  line-height: 14px;
+  padding: 13px 23px;
+  border-right: 1px solid #444;
+}
+#navigation>ul>li>a:hover, #navigation>ul>li>.active>a {
+  background-color: #333;
+  color: #6bc565;
+}
+#navigation>ul>li>:first-child>a {
+  padding-left: 32px;
+}
+
+/*Выпадающее меню*/
+
+#navigation>ul>li>ul {
+  width: 200px;
+  background-color: #333;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  position: absolute;
+  top: 40px;
+  display: none;
+  overflow: hidden;
+}
+#navigation>ul>li:hover>ul {
+    display: block;
+}
+#navigation>ul>li>ul>li {
+  list-style-type: none;
+}
+#navigation>ul>li>ul>li>a {
+  display: block;
+  font-size: 12px;
+  color: #eee;
+  padding: 10px 23px;
+  line-height: 14px;
+  border-top: 1px solid #444;
+  text-decoration: none;
+}
+#navigation>ul>li>ul>li>a:hover {
+  background-color: #222;
+  color: #6bc565;
 }
 /*Контент*/
 
 #content {
   padding-bottom: 50px;
   overflow: hidden;
+  clear: both;
+  margin-top: 30px;
 }
 
 /*Левая колонка*/
