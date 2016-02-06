@@ -1,114 +1,99 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
-html,
+html, body {
+  height: 100%;
+}
 body {
-	height: 100%;
+  background: #f3f9fa url("img2/bg.jpg") repeat;
+  font: 14px/22px Arial;
+  color: #4444;
 }
-
-body {
-	background: #f3f9fa url("img2/bg.jpg") repeat;
-	font: 14px/22px Arial;
-	color:#4444;
+a {
+  color: #0083df;
 }
-
-a{
-	color: #0083df;
+a:hover {
+  text-decoration: none;
 }
-
-a:hover{
-	text-decoration: none;
+h1 {
+  font: 26px/22px Arial;
+  margin-bottom: 22px;
+  color: black;
 }
-
-h1{
-	font: 26px/22px Arial;
-	margin-bottom: 22px;
-	color:black;
+h2 {
+  font: 22px/22px Arial;
+  margin-bottom: 22px;
+  color: black;
 }
-
-h2{
-	font: 22px/22px Arial;
-	margin-bottom: 22px;
-	color:black;
+.green {
+  color: #1d8b15;
 }
-
-.green{
-	color: #1d8b15;
+.gray {
+  color: #666;
 }
-
-.gray{
-	color: #666;
-}
-
 p {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
 #wrap {
-	
-	min-height: 100%;
-	position: relative;
-	min-width: 980px;
+  min-height: 100%;
+  position: relative;
+  min-width: 980px;
 }
 
 /*Шапка*/
+
 #header {
-	height: 148px;
-	background: white url("img2/bg-header.jpg") left top no-repeat;
+  height: 148px;
+  background: white url("img2/bg-header.jpg") left top no-repeat;
 }
-
 #header .logo {
-	margin-top: 51px;
-	float: left;
+  margin-top: 51px;
+  float: left;
 }
-	
 #header .contacts {
-	margin-top: 24px;
-	float: right;
-	text-align: right;
-}	
-
+  margin-top: 24px;
+  float: right;
+  text-align: right;
+}
 #header .contacts p {
-	font: bold 18px/14px Arial;
-	color: black;
+  font: bold 18px/14px Arial;
+  color: black;
 }
-
 #header .contacts p .green {
-    font-size: 14px;
-    font-weight: normal;
+  font-size: 14px;
+  font-weight: normal;
 }
-
 #header .contacts p .gray {
-    font-size: 12px;
-    font-weight: normal;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 /*Контент*/
+
 #content {
-	padding-bottom: 50px;
-	overflow: hidden;
+  padding-bottom: 50px;
+  overflow: hidden;
 }
 
 /*Левая колонка*/
-#leftcol {
-	width: 20%;
-	float: left;
-}
 
+#leftcol {
+  width: 20%;
+  float: left;
+}
 #main {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 /*Подвал*/
-#footer {
-	height: 50px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
 
+#footer {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .content {
-	padding: 0 29px;
+  padding: 0 29px;
 }
