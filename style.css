@@ -69,6 +69,12 @@ p {
   font-weight: normal;
 }
 
+/*Навигация*/
+#navigation {
+    height: 43px;
+    background: transparent url("img/bg-navigation.png") repeat-x;
+    claer: both;
+}
 /*Контент*/
 
 #content {
